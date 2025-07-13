@@ -1,0 +1,129 @@
+body {
+    font-family: Tahoma, sans-serif;
+    text-align: center;
+    background-color: rgb(194, 191, 191);
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 41%;
+    text-align: justify;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+    color: #636363;
+    transition: filter 0.3s ease;
+}
+
+a:hover {
+    color: rgb(18, 18, 18);
+}
+
+aside img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: filter 0.3s ease;
+}
+
+aside img:hover {
+    filter: brightness(70%);
+}
+
+header {
+    color: rgb(255, 255, 255);
+    background-color: rgb(44, 44, 44);
+    padding: 10px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    top: 0;
+    background-color: #444444;
+}
+
+aside {
+    width: 25%;
+}
+
+#mais {
+    width: 25%;
+}
+
+.accordion {
+    width: 100%;
+    max-width: 600px;
+    margin: 10px auto;
+    border: 1px solid #312b32;
+}
+
+.accordion label:hover{
+    background-color: #181818;
+
+
+}
+
+.accordion input[type="checkbox"] {
+    display: none;
+}
+
+.accordion label {
+    transition: background-color 300ms ease;
+    display: block;
+    background: #393939;
+    color: #828077;
+    padding: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+.conteudo {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s;
+    background: grey;
+}
+
+.conteudo a{
+    color: #312b32;
+}
+
+input[type="checkbox"]:checked ~ .conteudo {
+    max-height: 200px;
+    padding: 15px;
+}
+
+ul{
+    list-style: none;
+    text-align: left;
+}
+
+#mais:hover{
+    color: #181818;
+}
+
+.links-diretor:hover{
+    color: #181818;
+}
